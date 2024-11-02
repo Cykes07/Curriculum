@@ -2,68 +2,112 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="curriculum, ingeniero, computación, HTML, CSS">
+    <meta name="description" content="Currículum vitae de Sergio Rodriguez, estudiante de ingeniería en computación">
+    <meta name="author" content="Sergio Rodriguez">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Currículum Vitae</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
-        <center><h1>Sergio Alexander Rodriguez Pineda</h1></center> 
-        <p><img src="https://placehold.co/300x100" align="Left"> Estudiante | serarodr@espol.edu.ec | 0999999999</p>
+        <h1>Sergio Alexander Rodriguez Pineda</h1>
+        <img src="Imagenes/descarga.jpg" alt="Foto de perfil">
     </header>
+
     <nav>
         <ul>
-        <li><a href="#resumen">Resumen</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#educacion">Educación</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#resumen">Resumen</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
         </ul>
     </nav>
+
     <main>
         <section id="resumen">
             <h2>Resumen</h2>
-            <p>
-                Soy un estudiante de ingeniería de computación, he realizado muchos proyectos desde 
-                muy joven llegando a participar en concursos y diariamente estoy aprendiendo, auspicio 
-                a poder crear un videojuego en el futuro. Actualmente estoy especializado en brindar 
-                apoyo a desarrolladores y poder y optimizar mi rendimiento de los sistemas informáticos.
-            </p>
+            <p>Soy un estudiante de ingeniería de computación, he realizado muchos proyectos desde muy joven llegando a participar en concursos y diariamente estoy aprendiendo, auspicio a poder crear un videojuego en el futuro.Siempre estoy buscando nuevas oportunidades para expandir mis habilidades y enfrentar desafíos tecnológicos. Actualmente estoy especializado en brindar apoyo a desarrolladores y poder y optimizar mi rendimiento de los sistemas informáticos.</p>
         </section>
-        <section id="experiencia">  
+
+        <section id="experiencia">
             <h2>Experiencia</h2>
-        </section>
-        <section id="educacion">
-            <h2>Educación</h2>
             <ul>
-                <li><b>Unidad Educativa Mariscal Sucre</b></li>
-                <p>Bachiller de Ciencias | 2011 - 2022 </p>
-                <p></p>
-                <li><b>Cursando: Escuela Politécnica del Litoral (ESPOL) 60%</b></li>
-                <p>Carrera de Ingeniería en Computación.   | 2022 - Actualidad</p>
+                <li>Codesarollador en proyecto de tesis "Enseñanza de Python a niños por Vr" en Unity Vr </li>
+                <li>Voluntario en proyectos de código abierto</li>
             </ul>
         </section>
-        <section id="habilidades">
-            <h2>Habilidades</h2>
+
+        <div class="fila-s">
+            <section id="educacion">
+                <h2>Educación</h2>
+                <p>Unidad Educativa Mariscal Sucre -  Gradudado en bachiller en Ciencias Exactas y médicas</p>
+                <p>Escuela Politécnica del Litoral (ESPOL) - Ingeniería en Computación (60% completado)</p>
+            </section>
+        
+            <section id="habilidades">
+                <h2>Habilidades</h2>
                 <ul>
-                    <li><b>Certificado Office 2013 (Word, Excel, Powerpoint)</b></li>
-                    <p>Herramientas de Colaboración Digital (Office) | Enero,2017- Diciembre,2017</p>
-                    <li><b>Diseño adobe 2016 </b></li>
-                    <p>Photoshop - Intermedio</p>
-                    <p>Ilustrador - Intermedio</p>
+                    <li>Desarrollo web: HTML, CSS, JavaScript</li>
+                    <li>Python, Java, MySQL, C++</li>
+                    <li>Certificado en Microsoft Office</li>
+                    <li>Adobe Photoshop e Illustrator - Nivel intermedio</li>
                 </ul>
-        </section>
+            </section>
+        </div>
+
         <section id="proyectos">
             <h2>Proyectos</h2>
+            <div class="proyecto-grid">
+                <div class="proyecto">
+                    <img src="Imagenes/VentanaViviani.jpg" alt="Proyecto 1">
+                    <a href="https://proyecto1.com" class="link-proyecto">Ver Proyecto 1</a>
+                </div>
+                <div class="proyecto">
+                    <img src="Imagenes/Ajedrez.jpg" alt="Proyecto 2">
+                    <a href="https://github.com/Cykes07/Ajedrez_Java" class="link-proyecto">Ver Proyecto 2</a>
+                </div>
+                <div class="proyecto">
+                    <img src="Imagenes/Snake.jpg" alt="Proyecto 3">
+                    <a href="https://github.com/Cykes07/Taller01-Snake" class="link-proyecto">Ver Proyecto 3</a>
+                </div>
+            </div>
         </section>
+
     </main>
+
     <footer>
-        <p>© Sergio "Cykes" Rodriguez - 2024</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/tunombre">LinkedIn</a></li>
-            <li><a href="https://github.com/tunombre">GitHub</a></li>
-        </ul>
+        <div class="footer-content">
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+
+            <div class="video-container">
+                <h2>Video de YouTube</h2>
+                <div class="video-border">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kGdbTnDPjDw?si=sgbVMj4tS9veNOnQ" 
+                            frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0236659040224!2d-79.97045872601983!3d-2.14462063716457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses!2sec!4v1728502281736!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <p>© 2024 Sergio Rodriguez</p>
     </footer>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0236659040224!2d-79.97045872601983!3d-2.14462063716457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses!2sec!4v1728502281736!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 </body>
 </html>

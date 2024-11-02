@@ -1,0 +1,177 @@
+h1, h2 {
+    text-align: center;           
+    font-size: 2.5em;             
+    text-decoration: underline;   
+    margin-bottom: 20px;      
+    color: white;    
+}
+
+section p, section ul {
+    background-color: #c6d3ff;
+    color: #333; 
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px black;
+    max-width: 800px; 
+    margin: 0 auto 30px; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #250133;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+    color: white;
+}
+
+main {
+    background-color: #2d2b30;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.proyecto-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.proyecto {
+    position: relative;
+}
+
+.proyecto img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.link-proyecto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.proyecto:hover .link-proyecto {
+    opacity: 1;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0;
+}
+
+form label {
+    margin-bottom: 8px;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #670091;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #670091;
+}
+
+iframe {
+    margin-left: 200px;
+}
+
+footer p {
+    margin-top: 20px;
+    color: white;
+}
+
+.fila-s {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around; 
+}
+
+.fila-s section {
+    flex: 1; 
+    background-color: #2d2b30;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
